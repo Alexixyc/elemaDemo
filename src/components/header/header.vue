@@ -1,17 +1,15 @@
 <template>
-	
-
-
-	
+<div class="header">
+	我是header
+</div>
 </template>
 
-<script type="text/javascript"></script>
+<script>
+export default {
+
+}
+</script>
 
 <style scoped lang="less">
-	/*这种注释是会被编译的*/
-//这种注释是不会被编译的
-
-@width:300px;
-
-
+@width: 300px;
 </style>

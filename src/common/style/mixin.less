@@ -1,0 +1,17 @@
+.border-1px(@color) {
+  position: relative;
+
+  &:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid @color;
+    content: '';
+  }
+}
+//实现手机端1像素。通过伪类画一个1像素的表框，定位到元素下面
+//再根据设备的最小dpr来进行缩放
+//1.5 缩放0.7倍
+//2   缩放0.5倍
